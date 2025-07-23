@@ -212,7 +212,7 @@
   z-index: var(--front-z-index);
   position: relative;
   inline-size: calc(381 / var(--layout-width-scroll) * 100%);
-  margin: auto;
+  margin-inline: auto;
 }
 
 .l-slider__wrapper {
@@ -234,7 +234,7 @@
 
 .l-section__heading {
   inline-size: calc(500 / var(--layout-width-scroll) * 100%);
-  margin: auto;
+  margin-inline: auto;
 }
 
 .l-section__heading--long {
@@ -266,13 +266,13 @@
 
 .l-section__heading-text--point {
   inline-size: calc((379 / 500) * 100%);
-  margin: auto;
+  margin-inline: auto;
   padding-block: calc((21 / 500) * 100%);
 }
 
 .l-section__heading-text--nyuin {
   inline-size: calc((368 / 500) * 100%);
-  margin: auto;
+  margin-inline: auto;
   padding-block: calc((37 / 500) * 100%);
 }
 
@@ -284,13 +284,13 @@
 
 .l-section__heading-text--fa {
   inline-size: calc((388 / 598) * 100%);
-  margin: auto;
+  margin-inline: auto;
   padding-block: calc((23 / 598) * 100%);
 }
 
 .l-section__heading-text--qa {
   inline-size: calc((299 / 598) * 100%);
-  margin: auto;
+  margin-inline: auto;
   padding-block: calc((37 / 598) * 100%);
 }
 
@@ -623,7 +623,7 @@
   z-index: var(--front-z-index);
   position: relative;
   inline-size: calc(413 / var(--layout-width-scroll) * 100%);
-  margin: auto;
+  margin-inline: auto;
   padding-block-start: calc(37 / var(--layout-width-scroll) * 100%);
 }
 
@@ -815,7 +815,7 @@
 
   .l-nav__heading {
     inline-size: calc((530 / 546) * 100%);
-    margin: auto;
+    margin-inline: auto;
   }
 
   .l-nav__list {
