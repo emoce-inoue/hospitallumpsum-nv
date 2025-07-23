@@ -25,7 +25,7 @@ const setCTA = () => {
   const cta = document.querySelector('.l-sticky-cta');
   const slider = document.querySelector('.l-slider');
 
-  if (!cta || !top) {
+  if (!cta || !slider) {
     return;
   }
 

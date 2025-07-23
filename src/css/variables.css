@@ -4,6 +4,7 @@
   --font-sans: 'Noto Sans', sans-serif;
   --base-text-unit: 16;
   --rem-ratio: calc(1rem / var(--base-text-unit));
+  --vw-ratio: var(--layout-width-scroll) * 100vw;
   --font-light: 300;
   --font-normal: 400;
   --font-medium: 500;

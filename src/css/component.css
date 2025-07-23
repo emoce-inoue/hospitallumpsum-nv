@@ -28,7 +28,7 @@
   position: relative;
   flex: 1;
   font-weight: var(--font-bold);
-  font-size: calc(38 / var(--layout-width-scroll) * 100vw);
+  font-size: calc(38 / var(--vw-ratio));
   color: var(--color-white);
   text-align: center;
   letter-spacing: var(--tracking-normal);
