@@ -1,0 +1,89 @@
+.c-contact__button {
+  z-index: var(--front-z-index);
+  position: relative;
+  inline-size: calc(635 / var(--layout-width-scroll) * 100%);
+  aspect-ratio: var(--aspect-button);
+  margin: calc(98 / var(--layout-width-scroll) * 100%) auto 0;
+}
+
+.c-contact__button--top {
+  margin-block-start: calc(70 / var(--layout-width-scroll) * 100%);
+  background-color: var(--background-base);
+}
+
+.c-contact__button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--color-orange);
+  border-radius: var(--rounded-100);
+  border: 3px solid var(--color-orange);
+  transition: background 0.3s ease;
+}
+
+.c-contact__button-link-text {
+  z-index: var(--front-z-index);
+  position: relative;
+  flex: 1;
+  font-weight: var(--font-bold);
+  font-size: calc(38 / var(--layout-width-scroll) * 100vw);
+  color: var(--color-white);
+  text-align: center;
+  letter-spacing: var(--tracking-normal);
+  transition: color 0.3s ease;
+}
+
+.c-contact__button-link-arrow {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-end: calc((42 / 635) * 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: calc((21 / 635) * 100%);
+  translate: 0 -50%;
+}
+
+.c-contact__button-link-arrow-svg {
+  fill: var(--color-white);
+  transition: fill 0.3s ease;
+}
+
+.c-contact__button-link-timer {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: calc((46 / 635) * 100%);
+  inline-size: calc((128 / 635) * 100%);
+  margin-block-start: calc((-76 / 635) * 100%);
+  opacity: 0;
+}
+
+.c-contact__button--top.js-load--loaded .c-contact__button-link-timer--top {
+  animation-play-state: running;
+}
+
+.c-contact__button.is-inview .c-contact__button-link-timer--bottom {
+  animation-play-state: running;
+}
+
+@media screen and (min-width: 768px) {
+  .c-contact__button-link-text {
+    font-size: calc((38 * 0.6) / var(--layout-width-max) * 100vw);
+  }
+}
+
+@media (any-hover: hover) {
+  .c-contact__button-link:hover {
+    background-color: var(--background-base);
+  }
+
+  .c-contact__button-link:hover .c-contact__button-link-text {
+    color: var(--color-orange);
+  }
+
+  .c-contact__button-link:hover .c-contact__button-link-arrow-svg {
+    fill: var(--color-orange);
+  }
+}
