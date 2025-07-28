@@ -74,9 +74,9 @@
 .l-sticky-cta__link-timer {
   position: absolute;
   inset-block-start: 0;
-  inset-inline-start: calc((46/635)*100%);
-  inline-size: calc((128/635)*100%);
-  margin-block-start: calc((-76/635)*100%);
+  inset-inline-start: calc((46 / 635) * 100%);
+  inline-size: calc((128 / 635) * 100%);
+  margin-block-start: calc((-76 / 635) * 100%);
 }
 
 .l-scroll-content {
